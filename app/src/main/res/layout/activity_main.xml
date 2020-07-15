@@ -8,27 +8,39 @@
 
 
     <TextView
-        android:hint="RESULT"
-        android:id="@+id/number"
+        android:id="@+id/result"
+        android:text="RESULT:"
         android:layout_width="350dp"
         android:layout_height="60dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="30dp"
+        android:textSize="50dp"
+        android:background="@color/colorPrimary" />
+
+    <TextView
+
+        android:id="@+id/number"
+        android:layout_below="@id/result"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
         android:textSize="50dp"
         android:background="#cdfeff" />
 
     <Button
         android:layout_below="@id/number"
         android:id="@+id/increment"
+        android:layout_centerInParent="true"
         android:layout_width="268dp"
         android:layout_height="150dp"
         android:layout_marginLeft="40dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="50dp"
         android:text="INCREMENT"
         android:textSize="30dp"/>
 
     <Button
         android:layout_below="@id/increment"
         android:id="@+id/reset"
+        android:layout_centerInParent="true"
         android:layout_width="265dp"
         android:layout_height="95dp"
         android:text="RESET"

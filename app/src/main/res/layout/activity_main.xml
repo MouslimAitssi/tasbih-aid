@@ -8,18 +8,35 @@
 
 
     <TextView
-        android:id="@+id/result"
-        android:text="RESULT:"
-        android:layout_width="350dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="30dp"
-        android:textSize="50dp"
-        android:background="@color/colorPrimary" />
+        android:id="@+id/starting"
+        android:text="Your starting:"
+        android:textSize="40dp"
+        android:layout_width="297dp"
+        android:layout_height="65dp"/>
+    <TextView
+        android:id="@+id/date"
+        android:layout_below="@id/starting"
+        android:layout_width="301dp"
+        android:layout_height="65dp"
+        android:background="#cdfeff"
+        android:textSize="30dp" />
+
+    <Button
+        android:id="@+id/initdate"
+        android:layout_width="wrap_content"
+        android:layout_height="78dp"
+        android:layout_below="@id/number"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="-6dp"
+        android:layout_marginTop="-141dp"
+        android:layout_toRightOf="@id/date"
+        android:text="NOW"
+        android:textSize="30dp" />
 
     <TextView
 
         android:id="@+id/number"
-        android:layout_below="@id/result"
+        android:layout_below="@id/date"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:layout_marginTop="10dp"
@@ -27,25 +44,25 @@
         android:background="#cdfeff" />
 
     <Button
-        android:layout_below="@id/number"
         android:id="@+id/increment"
+        android:layout_width="266dp"
+        android:layout_height="122dp"
+        android:layout_below="@id/number"
         android:layout_centerInParent="true"
-        android:layout_width="268dp"
-        android:layout_height="150dp"
         android:layout_marginLeft="40dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="20dp"
         android:text="INCREMENT"
-        android:textSize="30dp"/>
+        android:textSize="30dp" />
 
     <Button
-        android:layout_below="@id/increment"
         android:id="@+id/reset"
+        android:layout_width="252dp"
+        android:layout_height="78dp"
+        android:layout_below="@id/increment"
         android:layout_centerInParent="true"
-        android:layout_width="265dp"
-        android:layout_height="95dp"
-        android:text="RESET"
         android:layout_marginLeft="40dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="21dp"
+        android:text="RESET"
         android:textSize="30dp" />
 
 
